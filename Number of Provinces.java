@@ -1,6 +1,9 @@
 https://practice.geeksforgeeks.org/problems/number-of-provinces/1
 https://www.youtube.com/watch?v=ACzkVtewUYA&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=7
 
+TC: O(N)+O(V+2E) [Outer loop-> O(N)]+ [BFS TC-> O(V+2E)]
+SC: O(N)
+    
 class Solution {
     
     static public void bfsOfGraph(int start, ArrayList<ArrayList<Integer>> adj,int[] vis) {
