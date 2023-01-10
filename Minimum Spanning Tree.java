@@ -1,6 +1,8 @@
 https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1
 https://www.youtube.com/watch?v=mJcZjjKzeqk&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=45
 
+TC: O(Elog E)
+SC: O(E)
 class Pair{
     int node;
     int weight;
@@ -33,9 +35,7 @@ class Solution{
                 for(Pair x:adj.get(n)){
                     int xn=x.node;
                     int xwt=x.weight;
-                    //if(vis[xn]==0){
-                        pq.add(new Pair(xwt,xn));
-                    //}    
+                    pq.add(new Pair(xwt,xn));
                 }
                 vis[n]=1;
                 weightSum+=wt;
